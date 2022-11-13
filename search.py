@@ -18,7 +18,7 @@ class Graph(object):
 
         for node, edges in graph.items():
             for adjacent_node, value in edges.items():
-                if graph[adjacent_node].  (node, False) == False:
+                if graph[adjacent_node].get(node, False) == False:
                     graph[adjacent_node][node] = value
 
         return graph
